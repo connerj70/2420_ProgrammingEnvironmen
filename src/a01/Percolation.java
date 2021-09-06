@@ -19,7 +19,7 @@ public class Percolation {
 				// Connect top nodes to virtual top
 				this.uf.union(this.n*this.n, i);
 			}
-			if(i >= (N*N)-N) {
+			if (i >= (N * N) - N) {
 				// Connect bottom nodes to virtual bottom.
 				this.uf.union(this.n*this.n+1, i);
 			}
