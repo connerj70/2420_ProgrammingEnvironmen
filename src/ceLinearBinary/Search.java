@@ -20,8 +20,8 @@ public class Search {
 		if(numbers.length == 0) {
 			return -1;
 		}
-		int low = numbers[0];
-		int high = numbers[numbers.length - 1];
+		int low = 0;
+		int high = numbers.length - 1;
 		
 		if(low == high) {
 			if(numbers[low] == key) {
@@ -31,7 +31,7 @@ public class Search {
 			}
 		}
 		
-		while(low != high && low < numbers.length && high > 0) {
+		while(low != high && low < numbers.length && high >= 0) {
 			int mid = (high - low) / 2;
 			if(numbers[mid] == key) {
 				return mid;
