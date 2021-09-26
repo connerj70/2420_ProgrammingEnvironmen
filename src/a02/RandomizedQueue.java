@@ -112,11 +112,5 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 		for(String j: q) {
 			System.out.println(j);
 		}
-		
-//		System.out.println(q.dequeue());
-//		System.out.println(q.size());
-//		System.out.println(q.isEmpty());
-//		q.dequeue();
-//		System.out.println(q.isEmpty());
 	}
 }
